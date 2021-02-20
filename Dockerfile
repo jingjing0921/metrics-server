@@ -12,6 +12,7 @@ COPY Makefile Makefile
 ARG ARCH
 ARG GIT_COMMIT
 ARG GIT_TAG
+ARG BUILD_DATE
 RUN make metrics-server
 
 FROM gcr.io/distroless/static:latest
